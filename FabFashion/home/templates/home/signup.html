@@ -1,0 +1,86 @@
+{% extends 'home/base.html' %}
+{% block title %} FabFashions | 
+{% endblock %}
+{% block content %}
+  <main>
+        <!-- breadcrumb Start-->
+        <div class="page-notification page-notification2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{% url 'register' %}">SignUp</a></li> 
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb End-->
+        <!-- Hero Area End-->
+        <!--?  Contact Area start  -->
+        <section class="contact-section">
+            <div class="container">
+               
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="contact-title">CREATE AN ACCOUNT WITH US</h2>
+                    </div>
+                    <div class="col-lg-8">
+                        <form class="form-contact contact_form" action="#" method="post" id="contactForm" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input class="form-control" name="Username" id="Username" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter a Username'" placeholder="Enter a Username">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="f_name" id="f_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your First Name'" placeholder="Enter your First Name">
+                                    </div>
+                                </div>
+                               
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="l_name" id="l_name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Last Name'" placeholder="Enter your Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                    </div>
+                                </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="phone" id="phone" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Phonenumber'" placeholder="Enter your Phonenumber">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="password" id="password" type="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter password'" placeholder="Enter Password">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input class="form-control valid" name="c_password" id="c_password" type="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Re-enter Password'" placeholder="Re-enter Password">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group mt-3">
+                                <button type="submit" class="button button-contactForm boxed-btn">REGISTER</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                         <img src="../../../static/home/assets/img/logo/register.jpg" class="img img-responsive"/>
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Area End -->
+    </main>
+{% endblock %}
